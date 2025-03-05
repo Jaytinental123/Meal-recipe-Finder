@@ -1,0 +1,1188 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.5px;
+
+}
+
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.header-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7.5rem;
+}
+
+.logo{
+    width: 128px;
+    height: 40px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    background-image: url(./Images/Hero\ bcg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 2rem;
+}
+
+.text-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimon {
+    color: #fff;
+    line-height: 1.2;
+}
+
+.text-content h1 {
+
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+
+}
+
+.text-content p {
+
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.4;
+
+}
+
+.input-and-suggestions {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-search {
+    width: 100%;
+    height: 3.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    padding: 0;
+
+
+}
+
+.input-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: #fff;
+    gap: .5rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.input-icon i {
+    font-size: 1.25rem;
+    color: #787878;
+}
+
+input {
+    width: 100%;
+    color: #787878;
+    border: none;
+    outline: none;
+}
+
+input::content {
+    color: #333;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #787878;
+    font-size: .8rem;
+}
+
+button {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem 0 .8rem;
+    outline: none;
+    border: none;
+    background-color: #FC7210;
+    color: #fff;
+    cursor: pointer;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.pills-suggestions {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+   
+}
+
+.pill {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    padding: .6rem 1.2rem;
+    border-radius: 1.5rem;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 1rem;
+    min-height: 40px;
+}
+
+.pill:hover {
+    background-color: #FC7210 !important;
+}
+
+.popular-recipe {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 5rem;
+    gap: 1rem;
+    background-color: #F5F3F0;
+}
+
+.empty-state {
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 5rem 7.5rem;
+    gap: 1rem;
+    background-color: #F5F3F0;
+}
+
+.search-result {
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 7.5rem;
+    gap: 1rem;
+    background-color: #ececec;
+}
+
+.title-box {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.title-box h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.title-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.recipes-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+    padding: 5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.recipe {
+    width: 32%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    background-color: #fff;
+}
+
+.image-container {
+    width: 100%;
+    height: 16rem;
+
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem .5rem 0 0;
+    object-fit: cover;
+}
+
+.des-box {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: #fff;
+    border-radius: 0 0 .5rem .5rem;
+    gap: .5rem;
+
+}
+
+
+.name-of-meal {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.des-box p {
+    font-size: .95rem;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.description-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #787878;
+}
+
+.description-box i {
+    font-size: .9rem;
+    color: #787878;
+}
+
+.left {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.right {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.testimonial {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 5rem 7.5rem;
+    gap: 4rem;
+    background-color: #AC4700;
+    color: #fff;
+
+}
+
+.testimonial-box {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+   
+}
+
+.testimonial-image {
+    width: 50%;
+    height: auto;
+    
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   border-radius: 1rem;
+}
+
+.testimonial-list {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.testi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .5rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: transform 1s ease, opacity 0.8s ease;
+    ;
+
+}
+
+.testi.moving {
+    transform: translateY(-200%);
+    opacity: 0;
+}
+
+.testi:hover{
+    background-color: #FC7210;
+}
+
+.testi:hover p,
+.testi:hover .text {
+    color: #fff !important;
+}
+
+.name-and-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.profile-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #ddd;
+    border-radius: 12rem;
+
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.name-and-image p {
+    font-size: .875rem;
+    font-weight: 600;
+    color: #333;
+}
+
+
+.text {
+    font-size: .875rem;
+    color: #787878;
+    line-height: 150%;
+}
+
+.popular-ingredients {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 5rem 7.5rem;
+    gap: 1rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.carousel {
+    width: max-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 5rem;
+    gap: 1rem;
+    animation: scroll 50s linear infinite;
+
+}
+
+.ingredient {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    background-color: #fff;
+    border: 1px solid #F5F3F0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.ingredient-name {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background-color: #F5F3F0;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.ingredient-name h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 7.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer i {
+    font-size: 1.5rem;
+
+}
+
+.right-links {
+    width: fit-content;
+    height: auto;
+    gap: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-links p {
+    font-size: .875rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+}
+
+.social-links a {
+    color: #fff; 
+    font-size: 32px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FC7210; 
+}
+
+.right-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.right-links a:active{
+    text-decoration: underline;
+    color: #FC7210;
+}
+
+.recipe-modal {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: start;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 2rem;
+}
+
+
+.modal-content {
+    display: flex;
+    width: 40%;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+    row-gap: 2rem;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+
+.top-details {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.top-details h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.copy {
+    background-color: #F5F3F0;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 1.5rem;
+}
+
+
+.copy i {
+    font-size: 1.2rem;
+    color: #FC7210;
+}
+
+
+.image-container {
+    width: 100%;
+    height: 40vh;
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+.meal-image {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+
+
+p {
+    font-size: .875rem;
+    color: #333;
+}
+
+
+.content-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.steps {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: #F5F3F0;
+    border-radius: .5rem;
+    padding: 1rem 2rem!important;
+
+}
+
+.ingredients {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: #F5F3F0;
+    border-radius: .5rem;
+    padding: 1rem 2rem!important;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+#ingredients-list,
+#steps-list {
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+
+@media (max-width: 700px) {
+
+    .header-nav {
+        padding: 1rem;
+    }
+
+    .hero-section {
+        padding: 6rem 1rem;
+    }
+
+    .logo{
+        width: 114px;
+        height: 32px;
+    }
+    
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .content {
+        width: 90%;
+        height: auto;
+    }
+
+
+    .text-content h1 {
+        font-size: 2.2rem;
+
+    }
+
+    .text-content p {
+
+        font-size: 1rem;
+        line-height: 150%;
+    }
+
+
+
+    .pills-suggestions {
+        flex-wrap: wrap;
+    }
+
+    .pill {
+        font-size: .75rem;
+    }
+
+    .pill {
+
+        min-height: 24px;
+    }
+
+    .input-search {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        background-color: #fff;
+        border-radius: 1.5rem;
+        padding: 0;
+    
+    
+    }
+
+    .popular-recipe {
+
+        padding: 3rem 1rem;
+
+    }
+
+    .empty-state {
+
+        padding: 3rem 1rem;
+        gap: 1rem;
+        background-color: #F5F3F0;
+    }
+
+    .search-result {
+        padding: 3rem 1rem;
+        gap: 1rem;
+    }
+
+    .title-box {
+        width: 100%;
+    }
+
+    .title-box h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .title-box p {
+        font-size: .8rem;
+        line-height: 150%;
+    }
+
+    .recipes-box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        padding: 1rem;
+        gap: 1rem;
+
+    }
+
+    .recipe {
+        width: 100%;
+
+    }
+
+    .image-container {
+        width: 100%;
+        height: 12rem;
+
+
+    }
+
+
+
+
+
+
+    .name-of-meal {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .des-box p {
+        font-size: .8rem;
+        font-weight: 300;
+        line-height: 150%;
+    }
+
+
+
+
+    .testimonial {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 3rem 1rem;
+        gap: 2rem;
+        background-color: #AC4700;
+        color: #fff;
+
+    }
+
+    .testimonial-box {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1.5rem;
+        
+    }
+
+    .testimonial-image {
+        display: none;
+    }
+
+
+    .testimonial-list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .testi {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: .5rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: .5rem;
+        transition: transform 1s ease, opacity 0.8s ease;
+        ;
+
+    }
+
+    .testi.moving {
+        transform: translateY(-120%);
+        opacity: 0;
+    }
+
+    .testi.hover {
+        background-color: #FC7210 !important;
+        color: #fff !important;
+    }
+
+    .name-and-image {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .profile-img {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #ddd;
+        border-radius: 12rem;
+
+    }
+
+    .profile-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .name-and-image p {
+        font-size: .875rem;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .popular-ingredients {
+
+        padding: 5rem 1rem;
+        gap: 1rem;
+
+
+    }
+
+    .carousel {
+        padding: 1rem;
+
+    }
+
+    .ingredient {
+        width: 25%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: .5rem;
+        background-color: #fff;
+        border: 1px solid #F5F3F0;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .ingredient-name {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: .8rem;
+        background-color: #F5F3F0;
+        border-radius: 0 0 .5rem .5rem;
+    }
+
+    .ingredient-name h2 {
+        font-size: .875rem;
+        font-weight: 400;
+    }
+
+    .footer {
+        background-color: #333;
+        color: #fff;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer i {
+        font-size: 1.5rem;
+
+
+    }
+
+    .right-links {
+        width: fit-content;
+        height: auto;
+        gap: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-links p {
+        font-size: .6rem;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+   
+
+   
+    .recipe-modal {
+        width: 100%;
+        height: 100vh;
+        display: none;
+        justify-content: center;
+        align-items: start;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 1rem;
+    }
+    
+    
+    .modal-content {
+        display: flex;
+        width: 100%;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: #fff;
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+        animation: fadeIn 0.3s ease-in-out;
+        row-gap: 2rem;
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+    }
+    
+    
+    .top-details {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    
+    }
+    
+    .top-details h2 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .copy {
+      
+        border-radius: .5rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem 1.2rem;
+    }
+    
+    .copy i {
+        font-size: 1rem;
+       
+    }
+    
+    
+    .image-container {
+        width: 100%;
+        height: 30vh;
+        row-gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+    }
+    
+    .meal-image {
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+    
+    
+    
+    p {
+        font-size: .875rem;
+        color: #333;
+    }
+    
+    
+    .content-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+        margin-top: 1rem;
+    
+    }
+    
+    .steps {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: #F5F3F0;
+        border-radius: .5rem;
+        padding: 1rem 2rem!important;
+    
+    }
+    
+    .ingredients {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: #F5F3F0;
+        border-radius: .5rem;
+        padding: 1rem 2rem!important;
+    }
+    
+    h3 {
+        font-size: .9rem;
+    }
+    
+    #ingredients-list,
+    #steps-list {
+    
+        font-size: .875rem;
+        line-height: 1.8;
+    }
+    
+
+
+}

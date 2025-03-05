@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaytinental Meal Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <div class="header-nav">
+        <div class="logo" id="logo">
+            <img src="./Images/logo.svg" alt="logo">
+        </div>
+        <div class="right-links">
+            <a href="https://wa.me/2349035719045" target="_blank">Contact us</a>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="content">
+            <div class="text-content">
+                <h1> Find Any Recipe in Seconds</h1>
+                <p> Search for any meal, get instant recipes, and cook with ease.</p>
+            </div>
+            <div class="input-and-suggestions">
+                <div class="input-search">
+
+                    <div class="input-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="search" id="search" placeholder="Search for any meal">
+                    </div>
+                    <button id="search-button"> Search</button>
+
+                </div>
+                <div class="pills-suggestions" id="pills-suggestions">
+                    <div class="pill">
+                        <p> Beef </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="empty-state" id="empty-state">
+        <div class="notfound-image">
+            <img src="./Images/found-magnifying-glass_14530059 1.png" alt="">
+        </div>
+        <div class="title-box">
+            <h2>No recipes found</h2>
+            <p> Oops, we could not find that particular meal, try another one</p>
+        </div>
+
+    </div>
+    <div class="search-result" id="search-result">
+        <div class="title-box">
+            <h2> Search Result</h2>
+            <p> Found <span id="search-count"> 3</span> recipes</p>
+        </div>
+        <div class="recipes-box" id="recipes-box">
+            <div class="recipe" >
+                <div class="image-container" id="image-container">
+                    <img src="./Images/meal image.png" alt="">
+                </div>
+                <div class="des-box">
+                    <h2 id="meal-name" class="name-of-meal"> Meal name</h2>
+                    <p id="describe"> Short description about the meal</p>
+                    <div class="description-box">
+                        <div class="left">
+                            <i class="fa-regular fa-clock"></i>
+                            <p id="time"> 30 mins</p>
+                        </div>
+                        <div class="right">
+                            <i class="fa-solid fa-web-awesome"></i>
+                            <p id="category">Easy</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popular-recipe" id="popular-recipe">
+        <div class="title-box">
+            <h2> Popular Recipes</h2>
+            <p> Explore trending dishes loved by food enthusiasts.</p>
+        </div>
+        <div class="recipes-box" id="recipes">
+            <div class="recipe">
+                <div class="image-container">
+                    <img src="./Images/meal image.png" alt="">
+                </div>
+                <div class="des-box">
+                    <h2> Meal name</h2>
+                    <p> Short description about the meal</p>
+                    <div class="description-box">
+                        <div class="left">
+                            <i class="fa-regular fa-clock"></i>
+                            <p id="time"> 30 mins</p>
+                        </div>
+                        <div class="right">
+                            <i class="fa-solid fa-web-awesome"></i>
+                            <p id="category">Easy</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <div class="title-box">
+            <h2> What Our Users Say</h2>
+            <p class="testimon"> Real Stories, Real Flavor, See What Others Are Saying</p>
+        </div>
+        <div class="testimonial-box">
+            <div class="testimonial-image">
+                <img src="./Images/Frame 2085663107.png" alt="">
+            </div>
+            <div class="testimonial-list">
+               
+                <div class="testi">
+                    <div class="name-and-image">
+                        <div class="profile-img"> <img src="./Images/pp 01.png" alt=""></div>
+                        <p> Yinka Kings</p>
+                    </div>
+                    <div class="text">
+                        <p>I used to struggle with meal ideas, but now I always have something delicious to cook!</p>
+                    </div>
+                </div>
+                <div class="testi">
+                    <div class="name-and-image">
+                        <div class="profile-img"> <img src="./Images/pp 02.png" alt=""></div>
+                        <p> Chef Wales</p>
+                    </div>
+                    <div class="text">
+                        A game-changer for my kitchen. The recipes are simple and easy to follow.
+                    </div>
+                </div>
+               
+                <div class="testi">
+                    <div class="name-and-image">
+                        <div class="profile-img"> <img src="./Images/pp 03.png" alt=""> </div>
+                        <p> Dev/chef Fred </p>
+                    </div>
+                    <div class="text">
+                        I love how I can search for any ingredient and find the perfect recipe instantly.
+                    </div>
+                </div>
+                <div class="testi">
+                    <div class="name-and-image">
+                        <div class="profile-img"> <img src="./Images/pp 04.png" alt=""> </div>
+                        <p> Santi Charlotte</p>
+                    </div>
+                    <div class="text">
+                        Jaytinental has made cooking fun! I never run out of ideas anymore.
+                    </div>
+                </div>
+                <div class="testi">
+                    <div class="name-and-image">
+                        <div class="profile-img"> <img src="./Images/pp 05.png" alt=""></div>
+                        <p> Tallie Tary</p>
+                    </div>
+                    <div class="text">
+                        As a beginner, I appreciate the easy instructions. My meals have never been better!
+                    </div>
+                </div>
+                <div class="testi">
+                    <div class="name-and-image">
+                        <div class="profile-img"> <img src="./Images/pp 06.png" alt=""></div>
+                        <p> Khime John</p>
+                    </div>
+                    <div class="text">
+                        This site helps me plan my weekly meals without stress. So convenient!
+                    </div>
+                </div>
+                <div class="testi">
+                    <div class="name-and-image">
+                        <div class="profile-img"><img src="./Images/pp 03.png" alt=""> </div>
+                        <p> John Doe</p>
+                    </div>
+                    <div class="text">
+                        I've impressed my family with new recipes. Thank you, Jaytinental!
+                    </div>
+                </div>
+                <div class="testi">
+                    <div class="name-and-image">
+                        <div class="profile-img"> <img src="./Images/pp 04.png" alt=""> </div>
+                        <p> Sandra Alex</p>
+                    </div>
+                    <div class="text">
+                        Cooking used to be a hassle, but now it's effortless. I love this website!
+                    </div>
+                </div>
+                <div class="testi">
+                    <div class="name-and-image">
+                        <div class="profile-img"> <img src="./Images/pp 05.png" alt=""></div>
+                        <p> Hellen Agbor</p>
+                    </div>
+                    <div class="text">
+                        Cooking has become my therapy. Trying new recipes here helps me relax after a long day.
+                    </div>
+                </div>
+                <div class="testi">
+                    <div class="name-and-image">
+                        <div class="profile-img"><img src="./Images/pp 06.png" alt=""> </div>
+                        <p> Tony Shalom</p>
+                    </div>
+                    <div class="text">
+                        This site isn't just about food—it's a form of self-care. Cooking new meals makes me feel good!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="popular-ingredients">
+        <div class="title-box">
+            <h2> Discover Ingredients</h2>
+            <p> Looking for inspiration? Try recipes with these popular ingredients</p>
+        </div>
+        <div class="carousel" id="carousel">
+            <div class="ingredient">
+                <div class="image-container">
+                    <img src="./Images/meal image.png" alt="">
+                </div>
+                <div class="ingredient-name">
+                    <h2> Meal name</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://www.instagram.com/jaytinental/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://x.com/jaytinental" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joyomowaye45/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="right-links">
+            <p> &copy; Copyright. 2025</p>
+            <p> Jaytinental Recipe Finder</p>
+            <p> All Rights Reserved</p>
+        </div>
+    </div>
+    <div id="recipe-modal" class="recipe-modal">
+        <div class="modal-content" id="modal-content">
+            <div class="top-details">
+                <h2> Meal Name</h2>
+                <div class="copy" id="copy">
+                    <i class="fa-solid fa-copy"></i>
+                </div>
+            </div>
+            <div class="image-container">
+                <img id="meal-image" src="./Images/meal image.png" alt="Meal Image">
+                <div class="description-box">
+                    <div class="left">
+                        <i class="fa-regular fa-clock"></i>
+                        <p id="time"> 30 mins</p>
+                    </div>
+                    <div class="right">
+                        <i class="fa-solid fa-web-awesome"></i>
+                        <p id="category">Easy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-list">
+                <div class="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list"></ul>
+                </div>
+                <div class="steps">
+                    <h3>Steps</h3>
+                    <ul id="steps-list"></ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
