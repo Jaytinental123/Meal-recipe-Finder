@@ -108,13 +108,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    input.addEventListener("input", function () {
-        let searchQuery = input.value.trim();
+    
 
-        if (searchQuery !== "") {
-            searchRecipe(searchQuery);
-        } 
-    });
+    setTimeout(() => {
+        input.addEventListener("input", function () {
+            let searchQuery = input.value.trim();
+    
+            if (searchQuery !== "") {
+                searchRecipe(searchQuery);
+            } 
+        });
+    }, 2000);
 
     async function fetchData(url) {
         try {

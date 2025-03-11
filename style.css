@@ -44,7 +44,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10rem;
+    padding: 7rem;
     background-image: url(./Images/Hero\ bcg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,7 +231,7 @@ button {
     justify-content: center;
     align-items: center;
     padding: 5rem 7.5rem;
-    gap: 1rem !important;
+    row-gap: .5rem;
     background-color: #ececec;
 }
 
@@ -265,7 +265,7 @@ button {
     flex-direction: row;
     justify-content: start;
     align-items: stretch;
-    padding: 5rem;
+    padding: 1rem;
     gap: 1rem;
     flex-wrap: wrap;
     row-gap: 2rem;
