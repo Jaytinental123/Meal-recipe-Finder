@@ -231,7 +231,7 @@ button {
     justify-content: center;
     align-items: center;
     padding: 5rem 7.5rem;
-    gap: 1rem;
+    gap: 1rem !important;
     background-color: #ececec;
 }
 

@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+
     searchResult.style.display = "none";
     emptyState.style.display = "none";
 
@@ -107,6 +108,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    input.addEventListener("input", function () {
+        let searchQuery = input.value.trim();
+
+        if (searchQuery !== "") {
+            searchRecipe(searchQuery);
+        } 
+    });
+
     async function fetchData(url) {
         try {
             let response = await fetch(url);
@@ -174,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     async function loadPopularPills() {
-        let mealUrl = `https://www.themealdb.com/api/json/v1/1/random.php`; // Get a random meal
+        let mealUrl = `https://www.themealdb.com/api/json/v1/1/random.php`; 
     
         try {
             pillsContainer.innerHTML = "";
@@ -183,11 +192,11 @@ document.addEventListener("DOMContentLoaded", function () {
             while (validPills.size < 6) { 
                 let data = await fetchData(mealUrl);
     
-                if (!data.meals || data.meals.length === 0) continue; // Skip if no meals
+                if (!data.meals || data.meals.length === 0) continue;
     
-                let meal = data.meals[0]; // Random meal
+                let meal = data.meals[0]; 
     
-                // Extract only valid ingredients
+               
                 for (let i = 1; i <= 20; i++) {
                     let ingredient = meal[`strIngredient${i}`];
     
@@ -195,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         validPills.add(ingredient.trim());
                     }
     
-                    if (validPills.size >= 6) break; // Stop at 6 unique pills
+                    if (validPills.size >= 6) break;
                 }
             }
     
@@ -204,9 +213,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
     
-            let shuffledPills = Array.from(validPills).sort(() => Math.random() - 0.5); // Shuffle results
-    
-            // Render pills
+            let shuffledPills = Array.from(validPills).sort(() => Math.random() - 0.5); 
+            
             shuffledPills.forEach(ingredient => {
                 let pill = document.createElement("div");
                 pill.classList.add("pill");
