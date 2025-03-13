@@ -779,6 +779,10 @@ h3 {
         background-color: #F5F3F0;
     }
     
+    .title-box {
+        width: 100%;
+    }
+
     .search-result {
         width: 100%;
         height: auto;
