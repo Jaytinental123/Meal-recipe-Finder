@@ -722,6 +722,148 @@ h3 {
     line-height: 1.8;
 }
 
+@media (min-width: 701px) and (max-width: 1024px) {
+   
+    
+  
+    
+    .header-nav {
+      
+        padding: 1rem 3rem;
+    }
+    
+  
+    
+    .hero-section {
+     
+        padding: 8rem 1rem;
+      
+    }
+    
+    .content {
+        width: 60%;
+    }
+    
+    
+    .text-content h1 {
+    
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+    
+    }
+    
+    
+
+    .popular-recipe {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 5rem 1rem;
+        gap: 1rem;
+        background-color: #F5F3F0;
+    }
+    
+    .empty-state {
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 5rem 7.5rem;
+        gap: 1rem;
+        background-color: #F5F3F0;
+    }
+    
+    .search-result {
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 1rem;
+        row-gap: .5rem;
+        background-color: #ececec;
+    }
+    
+   
+    
+    .recipes-box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: stretch;
+        padding: 1rem;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+    
+    .recipe {
+        width: 48%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: .5rem;
+        background-color: #fff;
+    }
+  
+    
+    .testimonial {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 5rem 3rem;
+        gap: 4rem;
+        background-color: #AC4700;
+        color: #fff;
+    
+    }
+    
+    .testimonial-box {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1.5rem;
+       
+    }
+    
+ 
+    
+  
+    .recipe-modal {
+        width: 100%;
+        height: 100vh;
+        display: none;
+        justify-content: center;
+        align-items: start;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 2rem;
+    }
+    
+    
+    .modal-content {
+        display: flex;
+        width: 70%;
+    }
+    
+}
 
 
 @media (max-width: 700px) {
